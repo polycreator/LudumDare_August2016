@@ -13,7 +13,7 @@ SceneSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 7
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -37,12 +37,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44692558, g: 0.49678743, b: 0.57508624, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 7
   m_GIWorkflowMode: 1
-  m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -53,17 +53,22 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 3
+    serializedVersion: 4
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
     m_TextureHeight: 1024
+    m_AO: 0
     m_AOMaxDistance: 1
-    m_Padding: 2
     m_CompAOExponent: 0
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
     m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_DirectLightInLightProbes: 1
     m_FinalGather: 0
+    m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
   m_LightingDataAsset: {fileID: 112000001, guid: d40c56e4373fee740a40e635a97b6081,
@@ -97,7 +102,6 @@ GameObject:
   - 20: {fileID: 84979563}
   - 124: {fileID: 84979562}
   - 92: {fileID: 84979561}
-  - 81: {fileID: 84979560}
   m_Layer: 0
   m_Name: camera_01
   m_TagString: Untagged
@@ -118,13 +122,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1272029943}
   m_RootOrder: 0
---- !u!81 &84979560
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84979558}
-  m_Enabled: 1
 --- !u!92 &84979561
 Behaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +165,7 @@ Camera:
   m_TargetTexture: {fileID: 8400000, guid: 62abe2cd6f09311438ad1fe0945d9c17, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
+  m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -260,6 +257,7 @@ GameObject:
   - 92: {fileID: 1415122388}
   - 124: {fileID: 1415122387}
   - 81: {fileID: 1415122386}
+  - 114: {fileID: 1415122391}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -328,10 +326,21 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1415122385}
-  m_LocalRotation: {x: -0.0000004979034, y: -0.9767919, z: 0.21419065, w: 0.0000022706326}
+  m_LocalRotation: {x: 0, y: 0.97134215, z: -0.2376859, w: 0}
   m_LocalPosition: {x: 0, y: -2.383, z: -100.401}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 24.7361, y: -179.9997, z: 0.0001}
+  m_LocalEulerAnglesHint: {x: 27.5, y: 180, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1415122391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1415122385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c487d6f8c091c48fbb9347cca58b7200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
