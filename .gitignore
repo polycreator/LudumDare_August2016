@@ -1,7 +1,6 @@
 Library
 Temp
 Builds
-Work_Files
 *.csproj
 *.pidb
 *.unityproj
