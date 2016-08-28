@@ -1,38 +1,70 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+enum EnemyDirection {
+	Forward,
+	Reverse
+}
+
 public class EnemyController : MonoBehaviour {
 	public Transform enemy;
 	public Transform[] spawnPoints;
 
-	const float EnemyInterval = 5.0f;
-	const float EnemyMoveMpS = 1.0f;
+	const float EnemyInterval = 7.0f;
+	const float EnemyMoveMpS = 3.0f;
 
 	float nextEnemyTime;
 	List<GameObject> enemies = new List<GameObject>();
 	List<GameObject> enemyNextWP = new List<GameObject>();
+	List<EnemyDirection> enemyDirection = new List<EnemyDirection>();
 
 	void Start () {
-		nextEnemyTime = Time.time + 2.0f;
+		nextEnemyTime = Time.time + 1.0f;
 	}
 
 	private GameObject pickRandomSpawnPoint() {
 		return spawnPoints[0].gameObject;
 	}
 
-	
-	
+	private void spawnEnemyAt(GameObject spawnPoint) {
+		var nextEnemy = ((Instantiate(enemy, spawnPoint.transform.localPosition, Quaternion.identity)) as Transform).gameObject;
+		enemies.Add(nextEnemy);
+		enemyDirection.Add(EnemyDirection.Forward);
+		var spawnProps = spawnPoint.GetComponent<EnemyWaypoint>();
+		enemyNextWP.Add(spawnProps.next);
+	}
+
+	private void selectNextWaypoint(int enemyIndex) {
+		var curTarget = enemyNextWP[enemyIndex];
+		if (curTarget) {
+			var wpProps = curTarget.GetComponent<EnemyWaypoint>();
+			var curDir = enemyDirection[enemyIndex];
+			if (curDir == EnemyDirection.Forward) {
+				if (wpProps.next != null) {
+					enemyNextWP[enemyIndex] = wpProps.next;
+				}
+				else {
+					enemyDirection[enemyIndex] = EnemyDirection.Reverse;
+					enemyNextWP[enemyIndex] = wpProps.previous;
+				}
+			}
+			else {
+				if (wpProps.previous != null) {
+					enemyNextWP[enemyIndex] = wpProps.previous;
+				}
+				else {
+					enemyDirection[enemyIndex] = EnemyDirection.Forward;
+					enemyNextWP[enemyIndex] = wpProps.next;
+				}
+			}
+		}
+	}
+
 	void Update () {
 		// spawn next when it's time
 		if (Time.time >= nextEnemyTime) {
-			var spawnPoint = pickRandomSpawnPoint();
-			var nextEnemy = Instantiate(enemy, spawnPoint.transform.localPosition, Quaternion.identity) as GameObject;
-			enemies.Add(nextEnemy);
-			var spawnProps = spawnPoint.GetComponent<EnemyWaypoint>();
-			print(nextEnemy);
-			print(spawnProps.next);
-			enemyNextWP.Add(spawnProps.next);
-			nextEnemyTime += EnemyInterval * 100.0f;
+			spawnEnemyAt(pickRandomSpawnPoint());
+			nextEnemyTime += EnemyInterval;
 		}
 
 		// move all
@@ -40,9 +72,19 @@ public class EnemyController : MonoBehaviour {
 			var enemy = enemies[x];
 			var nextWP = enemyNextWP[x];
 
-			var dir = (nextWP.transform.localPosition - enemy.transform.localPosition).normalized;
-			var movement = dir * (EnemyMoveMpS * Time.deltaTime);
-			enemy.transform.localPosition += movement;
+			var distance = (nextWP.transform.localPosition - enemy.transform.localPosition);
+
+			if (distance.magnitude > 0.1) {
+				var dir = distance.normalized;
+				var movement = dir * (EnemyMoveMpS * Time.deltaTime);
+				enemy.transform.localPosition += movement;
+			}
+			else {
+				enemy.transform.localPosition = nextWP.transform.localPosition;
+				selectNextWaypoint(x);
+			}
+
 		}
 	}
+	
 }
