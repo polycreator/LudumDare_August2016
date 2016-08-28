@@ -14,7 +14,7 @@ public class PanelButton : MonoBehaviour {
 	private float startTime_ = 0;
 	private Vector3 originalPos_ ;
 
-	const float PressTime = 1.0f;
+	const float PressTime = 0.5f;
 	const float Depression = 0.015f;
 
 	void Start() {
