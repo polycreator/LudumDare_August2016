@@ -16,7 +16,9 @@ public class PanelController : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0)) {
 			if (Physics.Raycast(ray, out hit)) {
 				var button = hit.collider.gameObject.GetComponent<PanelButton>();
-				button.Press();
+				if (button.Press()) {
+					
+				}
 			}
 		}
 	}

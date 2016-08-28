@@ -39,13 +39,14 @@ public class PanelButton : MonoBehaviour {
 		}
 	}
 
-	public void Press() {
+	public bool Press() {
 		if (state_ != ButtonState.Idle) {
-			return;
+			return false;
 		}
 
 		state_ = ButtonState.Pressing;
 		startTime_ = Time.time;
+		return true;
 	}
 
 	public void SetEnabled(bool newEnabled) {
