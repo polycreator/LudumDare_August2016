@@ -6,6 +6,8 @@ public class EnemyController : MonoBehaviour {
 	public Transform[] spawnPoints;
 
 	const float EnemyInterval = 5.0f;
+	const float EnemyMoveMpS = 1.0f;
+
 	float nextEnemyTime;
 	List<GameObject> enemies = new List<GameObject>();
 	List<GameObject> enemyNextWP = new List<GameObject>();
@@ -17,6 +19,8 @@ public class EnemyController : MonoBehaviour {
 	private GameObject pickRandomSpawnPoint() {
 		return spawnPoints[0].gameObject;
 	}
+
+	
 	
 	void Update () {
 		// spawn next when it's time
@@ -25,6 +29,8 @@ public class EnemyController : MonoBehaviour {
 			var nextEnemy = Instantiate(enemy, spawnPoint.transform.localPosition, Quaternion.identity) as GameObject;
 			enemies.Add(nextEnemy);
 			var spawnProps = spawnPoint.GetComponent<EnemyWaypoint>();
+			print(nextEnemy);
+			print(spawnProps.next);
 			enemyNextWP.Add(spawnProps.next);
 			nextEnemyTime += EnemyInterval * 100.0f;
 		}
@@ -34,7 +40,9 @@ public class EnemyController : MonoBehaviour {
 			var enemy = enemies[x];
 			var nextWP = enemyNextWP[x];
 
-
+			var dir = (nextWP.transform.localPosition - enemy.transform.localPosition).normalized;
+			var movement = dir * (EnemyMoveMpS * Time.deltaTime);
+			enemy.transform.localPosition += movement;
 		}
 	}
 }
