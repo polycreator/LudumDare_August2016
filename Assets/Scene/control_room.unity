@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44911015, g: 0.4991907, b: 0.575995, a: 1}
+  m_IndirectSpecularColor: {r: 0.44694203, g: 0.49680895, b: 0.5750955, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000575, guid: 4dae118251504439892693be38b6cb72,
+  m_LightingDataAsset: {fileID: 112000572, guid: 4dae118251504439892693be38b6cb72,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
@@ -91,10 +91,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &268316082 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
-  m_PrefabInternal: {fileID: 1412557352}
 --- !u!1 &350325848
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +104,7 @@ GameObject:
   - 23: {fileID: 350325851}
   - 114: {fileID: 350325850}
   m_Layer: 0
-  m_Name: CamButton1
+  m_Name: CamButton4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,12 +117,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350325848}
   m_LocalRotation: {x: 0.42488652, y: -0.009499525, z: 0.025597151, w: 0.9048348}
-  m_LocalPosition: {x: 1.606, y: -2.714, z: -1.496}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.1}
+  m_LocalPosition: {x: -0.19500005, y: 0.20099998, z: -0.21500397}
+  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999996}
   m_LocalEulerAnglesHint: {x: 50.293003, y: 0.397, z: 3.334}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 4
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 0
 --- !u!114 &350325850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +183,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350325848}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &428740685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 428740686}
+  m_Layer: 0
+  m_Name: CamButtons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428740686
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 428740685}
+  m_LocalRotation: {x: 0.0014466158, y: 0.00038643042, z: -0.008136102, w: 0.9999658}
+  m_LocalPosition: {x: 1.476, y: -2.848, z: -101.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0.164, y: 0.042000003, z: -0.90500003}
+  m_Children:
+  - {fileID: 350325849}
+  - {fileID: 776147292}
+  - {fileID: 1719070603}
+  - {fileID: 485345451}
+  - {fileID: 1751529950}
+  - {fileID: 1073811345}
+  - {fileID: 717882745}
+  - {fileID: 1390723961}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &485345450
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +232,7 @@ GameObject:
   - 23: {fileID: 485345453}
   - 114: {fileID: 485345452}
   m_Layer: 0
-  m_Name: CamButton4
+  m_Name: CamButton6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,12 +245,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 485345450}
   m_LocalRotation: {x: 0.4247071, y: -0.01557808, z: 0.03854144, w: 0.9043759}
-  m_LocalPosition: {x: 1.826, y: -2.9, z: -1.303}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999993}
+  m_LocalPosition: {x: 0.024999976, y: 0.0149998665, z: -0.022003174}
+  m_LocalScale: {x: 0.1, y: 0.020000007, z: 0.09999993}
   m_LocalEulerAnglesHint: {x: 50.293003, y: 0.397, z: 4.9290004}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 7
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 3
 --- !u!114 &485345452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,7 +324,7 @@ GameObject:
   - 23: {fileID: 717882747}
   - 114: {fileID: 717882746}
   m_Layer: 0
-  m_Name: CamButton7
+  m_Name: CamButton8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,12 +337,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717882744}
   m_LocalRotation: {x: 0.4006334, y: -0.010177993, z: 0.025335025, w: 0.91583157}
-  m_LocalPosition: {x: 1.607, y: -3.11, z: -1.143}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999985}
+  m_LocalPosition: {x: -0.194, y: -0.19499993, z: 0.13800049}
+  m_LocalScale: {x: 0.1, y: 0.020000014, z: 0.09999988}
   m_LocalEulerAnglesHint: {x: 47.247, y: 0.136, z: 3.137}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 10
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 6
 --- !u!114 &717882746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +456,7 @@ GameObject:
   - 23: {fileID: 776147294}
   - 114: {fileID: 776147293}
   m_Layer: 0
-  m_Name: CamButton2
+  m_Name: CamButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,12 +469,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 776147291}
   m_LocalRotation: {x: 0.42488652, y: -0.009499525, z: 0.025597151, w: 0.9048348}
-  m_LocalPosition: {x: 1.86, y: -2.665, z: -1.507}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.099999964}
+  m_LocalPosition: {x: 0.059000015, y: 0.25, z: -0.22600555}
+  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999993}
   m_LocalEulerAnglesHint: {x: 50.293003, y: 0.397, z: 3.334}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 5
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 1
 --- !u!114 &776147293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +548,7 @@ GameObject:
   - 23: {fileID: 1073811347}
   - 114: {fileID: 1073811346}
   m_Layer: 0
-  m_Name: CamButton6
+  m_Name: CamButton5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,12 +561,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1073811344}
   m_LocalRotation: {x: 0.421548, y: -0.009593824, z: 0.025561959, w: 0.906395}
-  m_LocalPosition: {x: 1.609, y: -2.903, z: -1.322}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999986}
+  m_LocalPosition: {x: -0.19200003, y: 0.0119998455, z: -0.041000366}
+  m_LocalScale: {x: 0.1, y: 0.02, z: 0.099999905}
   m_LocalEulerAnglesHint: {x: 49.871002, y: 0.35900003, z: 3.3040001}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 9
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 5
 --- !u!114 &1073811346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,13 +699,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1307478887}
-  m_LocalRotation: {x: 0.0020556177, y: 0.93533397, z: -0.35090142, w: 0.044881172}
-  m_LocalPosition: {x: 1.801, y: -2.915, z: -101.281}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 41.038002, y: 173.89401, z: -2.0400002}
+  m_LocalRotation: {x: 0.009594848, y: 0.93581015, z: -0.34990236, w: 0.04166024}
+  m_LocalPosition: {x: 1.476, y: -2.848, z: -101.39}
+  m_LocalScale: {x: 1.0009832, y: 1.0023925, z: 1.0033739}
+  m_LocalEulerAnglesHint: {x: 40.968002, y: 174.738, z: -0.82500005}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1390723960
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,7 +719,7 @@ GameObject:
   - 23: {fileID: 1390723963}
   - 114: {fileID: 1390723962}
   m_Layer: 0
-  m_Name: CamButton8
+  m_Name: CamButton7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -700,12 +732,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390723960}
   m_LocalRotation: {x: 0.42454958, y: -0.01940272, z: 0.046685454, w: 0.9039921}
-  m_LocalPosition: {x: 1.943, y: -3.013, z: -1.188}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999985}
+  m_LocalPosition: {x: 0.14199996, y: -0.09800005, z: 0.09299469}
+  m_LocalScale: {x: 0.1, y: 0.020000009, z: 0.09999985}
   m_LocalEulerAnglesHint: {x: 50.293003, y: 0.397, z: 5.9340005}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 11
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 7
 --- !u!114 &1390723962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,12 +835,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2300006, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 53c28265fbb31d04fadfc7b28b74ec64, type: 2}
+    - target: {fileID: 400010, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41c2cfa454720284393ca1a8795aec08, type: 3}
   m_IsPrefabParent: 0
@@ -924,7 +972,7 @@ GameObject:
   - 23: {fileID: 1719070605}
   - 114: {fileID: 1719070604}
   m_Layer: 0
-  m_Name: CamButton3
+  m_Name: CamButton2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,12 +985,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1719070602}
   m_LocalRotation: {x: 0.42435974, y: -0.023186276, z: 0.05474155, w: 0.9035401}
-  m_LocalPosition: {x: 2.183, y: -2.691, z: -1.437}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.09999993}
+  m_LocalPosition: {x: 0.3820001, y: 0.22399998, z: -0.15599823}
+  m_LocalScale: {x: 0.10000003, y: 0.02000001, z: 0.09999996}
   m_LocalEulerAnglesHint: {x: 50.293003, y: 0.397, z: 6.931}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 6
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 2
 --- !u!114 &1719070604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1064,7 @@ GameObject:
   - 23: {fileID: 1751529952}
   - 114: {fileID: 1751529951}
   m_Layer: 0
-  m_Name: CamButton5
+  m_Name: CamButton1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1029,12 +1077,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751529949}
   m_LocalRotation: {x: 0.4243352, y: -0.023631405, z: 0.055689316, w: 0.90348214}
-  m_LocalPosition: {x: 2.043, y: -2.91, z: -1.265}
-  m_LocalScale: {x: 0.1, y: 0.02, z: 0.0999999}
+  m_LocalPosition: {x: 0.24199998, y: 0.004999876, z: 0.01599884}
+  m_LocalScale: {x: 0.09999997, y: 0.02, z: 0.0999999}
   m_LocalEulerAnglesHint: {x: 50.293003, y: 0.397, z: 7.0480003}
   m_Children: []
-  m_Father: {fileID: 268316082}
-  m_RootOrder: 8
+  m_Father: {fileID: 428740686}
+  m_RootOrder: 4
 --- !u!114 &1751529951
 MonoBehaviour:
   m_ObjectHideFlags: 0
