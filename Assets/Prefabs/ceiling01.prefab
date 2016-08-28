@@ -51,7 +51,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000013694796846}
-  - 95: {fileID: 95000012856569102}
   m_Layer: 0
   m_Name: ceiling01
   m_TagString: Untagged
@@ -107,7 +106,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010822822838}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -136,20 +135,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010822822838}
   m_Mesh: {fileID: 4300000, guid: be38831203f493142bdab623a635fa9a, type: 3}
---- !u!95 &95000012856569102
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012385374134}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: be38831203f493142bdab623a635fa9a, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1

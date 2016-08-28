@@ -27,6 +27,10 @@ ModelImporter:
     4300002: wall03
     4300004: spikes02
     4300006: spikes01
+    6400000: spikes01
+    6400002: spikes02
+    6400004: wall02
+    6400006: wall03
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -35,7 +39,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
@@ -54,10 +58,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
