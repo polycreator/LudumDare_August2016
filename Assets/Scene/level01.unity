@@ -1878,7 +1878,7 @@ GameObject:
   - 114: {fileID: 84676923}
   m_Layer: 0
   m_Name: camera_07
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1971,7 +1971,7 @@ GameObject:
   - 114: {fileID: 84979560}
   m_Layer: 0
   m_Name: camera_01
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,7 +2470,7 @@ GameObject:
   - 114: {fileID: 110746161}
   m_Layer: 0
   m_Name: camera_08
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10417,7 +10417,7 @@ GameObject:
   - 114: {fileID: 511392716}
   m_Layer: 0
   m_Name: camera_03
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12265,7 +12265,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1001 &620593844
 Prefab:
   m_ObjectHideFlags: 0
@@ -14633,7 +14633,7 @@ GameObject:
   - 114: {fileID: 730364263}
   m_Layer: 0
   m_Name: camera_02
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16832,7 +16832,7 @@ GameObject:
   - 114: {fileID: 857441449}
   m_Layer: 0
   m_Name: camera_05
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18064,7 +18064,7 @@ Transform:
   - {fileID: 286201993}
   - {fileID: 2128336226}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1001 &936933028
 Prefab:
   m_ObjectHideFlags: 0
@@ -24577,7 +24577,7 @@ Transform:
   - {fileID: 84676922}
   - {fileID: 110746160}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &1272029944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29790,7 +29790,7 @@ GameObject:
   - 114: {fileID: 1555906409}
   m_Layer: 0
   m_Name: camera_06
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33713,6 +33713,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013694796846, guid: 569c714ea91161d4a88812fca3c321a0,
     type: 2}
   m_PrefabInternal: {fileID: 1788219944}
+--- !u!1001 &1802331595
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.761875
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.393446
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.6602125
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 736725a082628bc4984cd44ecf325564, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1001 &1804108968
 Prefab:
   m_ObjectHideFlags: 0
@@ -34786,7 +34828,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010051516526, guid: 61b814ea044954a30be77c81a531d69c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 4.62
       objectReference: {fileID: 0}
     - target: {fileID: 4000010051516526, guid: 61b814ea044954a30be77c81a531d69c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -38112,7 +38154,7 @@ Transform:
   - {fileID: 731719699}
   - {fileID: 1659093146}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1001 &2053585782
 Prefab:
   m_ObjectHideFlags: 0
@@ -38411,7 +38453,7 @@ GameObject:
   - 114: {fileID: 2065397835}
   m_Layer: 0
   m_Name: camera_04
-  m_TagString: Untagged
+  m_TagString: Security Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39238,7 +39280,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 49.945004, y: -79.880005, z: -305.477}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1001 &2097496754
 Prefab:
   m_ObjectHideFlags: 0
