@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour {
 		var nextEnemy = ((Instantiate(enemy, spawnPoint.transform.localPosition, Quaternion.identity)) as Transform).gameObject;
 		enemies.Add(nextEnemy);
 		var spawnProps = spawnPoint.GetComponent<EnemyWaypoint>();
-		int ix = Mathf.RoundToInt(Random.Range(0, (float)spawnProps.next.Length));
+		int ix = Mathf.RoundToInt(Random.Range(0, (float)spawnProps.next.Length - 1));
 		enemyNextWP.Add(spawnProps.next[ix]);
 	}
 
@@ -39,6 +39,7 @@ public class EnemyController : MonoBehaviour {
 			}
 			else {
 				// TREASURE!
+				enemyNextWP[enemyIndex] = null;
 			}
 		}
 	}
@@ -54,6 +55,9 @@ public class EnemyController : MonoBehaviour {
 		for (int x = 0; x < enemies.Count; ++x) {
 			var enemy = enemies[x];
 			var nextWP = enemyNextWP[x];
+			if (nextWP == null) {
+				continue;
+			}
 
 			var distance = (nextWP.transform.localPosition - enemy.transform.localPosition);
 
