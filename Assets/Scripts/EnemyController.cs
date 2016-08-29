@@ -18,7 +18,8 @@ public class EnemyController : MonoBehaviour {
 	}
 
 	private GameObject pickRandomSpawnPoint() {
-		return spawnPoints[0].gameObject;
+		int spix = Mathf.RoundToInt(Random.Range(0, (float)spawnPoints.Length - 1));
+		return spawnPoints[spix].gameObject;
 	}
 
 	private void spawnEnemyAt(GameObject spawnPoint) {
@@ -34,7 +35,7 @@ public class EnemyController : MonoBehaviour {
 		if (curTarget) {
 			var wpProps = curTarget.GetComponent<EnemyWaypoint>();
 			if (wpProps.next != null) {
-				int ix = Mathf.RoundToInt(Random.Range(0, (float)wpProps.next.Length));
+				int ix = Mathf.RoundToInt(Random.Range(0, (float)wpProps.next.Length - 1));
 				enemyNextWP[enemyIndex] = wpProps.next[ix];
 			}
 			else {
