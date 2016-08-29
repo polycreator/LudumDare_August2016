@@ -31,15 +31,10 @@ public class PanelController : MonoBehaviour {
 						// trap activators
 						var curCam = GameObject.Find("camera_0" + cameraIndex_);
 						if (curCam) {
-							print("have cam " + cameraIndex_);
 							var trapCtl = curCam.GetComponent<CameraTrap_Controller>();
 							if (trapCtl) {
-								print("have trapCtl: "+ button.name);
 								var trapIx = int.Parse(button.name.Substring("TrapButton".Length));
-								print(trapIx);
 								if (trapCtl.trapController.Length > trapIx) {
-									print("trapIx OK");
-									print(trapCtl.trapController[trapIx].gameObject.name);
 									trapCtl.trapController[trapIx].ActivateTrap();
 								}
 							}
