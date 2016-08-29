@@ -38,6 +38,7 @@ GameObject:
   - 4: {fileID: 4000012723825718}
   - 111: {fileID: 111000012162488500}
   - 114: {fileID: 114000010474652032}
+  - 114: {fileID: 114000010001355822}
   m_Layer: 0
   m_Name: trap_wall_fire_2
   m_TagString: Untagged
@@ -247,7 +248,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010453266188}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.83, y: 4, z: -4}
+  m_LocalPosition: {x: 7.83, y: 4, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -298,7 +299,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 53d43058ad036ac4499bffc19dc4a6d5, type: 2}
+  - {fileID: 2100000, guid: 1ff0b044b6ae2fe4c8cb3407d92ddac7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -373,6 +374,20 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114000010001355822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010453266188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate: {fileID: 7400000, guid: 0e9f3ed81b9e60b40b4a08c492e5ac7e, type: 2}
+  reset: {fileID: 0}
+  trapIsSet: 1
 --- !u!114 &114000010474652032
 MonoBehaviour:
   m_ObjectHideFlags: 1
