@@ -8,6 +8,7 @@ Builds
 /[Ll]ibrary/
 sysinfo.txt
 *.stackdump
+work_files/
  
 # ============================================= #
 # Visual Studio / MonoDevelop / Rider generated #

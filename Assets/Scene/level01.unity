@@ -14665,25 +14665,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 251
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013169225658, guid: 425b2341b1efe7e4bba3a85b1c77f03c, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -179.99998
-      objectReference: {fileID: 0}
     - target: {fileID: 1000012231681672, guid: 425b2341b1efe7e4bba3a85b1c77f03c, type: 2}
       propertyPath: m_Name
       value: wall01 (57)
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012231681672, guid: 425b2341b1efe7e4bba3a85b1c77f03c, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013183042364, guid: 425b2341b1efe7e4bba3a85b1c77f03c, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425b2341b1efe7e4bba3a85b1c77f03c, type: 2}
@@ -18505,26 +18489,6 @@ Prefab:
     - target: {fileID: 1000010847452854, guid: ac98e1a86e787a4418bde9b8496a1ddf, type: 2}
       propertyPath: m_Name
       value: wall02 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014234835058, guid: ac98e1a86e787a4418bde9b8496a1ddf, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014234835058, guid: ac98e1a86e787a4418bde9b8496a1ddf, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000010847452854, guid: ac98e1a86e787a4418bde9b8496a1ddf, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013898984740, guid: ac98e1a86e787a4418bde9b8496a1ddf, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac98e1a86e787a4418bde9b8496a1ddf, type: 2}
@@ -28583,6 +28547,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 23000011981004544, guid: 1453d7a99a98ed942a00fc5ef5c57cc3,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ff0b044b6ae2fe4c8cb3407d92ddac7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1453d7a99a98ed942a00fc5ef5c57cc3, type: 2}
   m_IsPrefabParent: 0
@@ -32208,26 +32177,6 @@ Prefab:
     - target: {fileID: 4000013705796406, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
       propertyPath: m_RootOrder
       value: 107
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013705796406, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013705796406, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013705796406, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012883069016, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011610224284, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 81f04f15e6991dd49999a7e0649c5d7b, type: 2}
@@ -39147,7 +39096,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -39157,7 +39106,7 @@ Light:
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0
-    m_NormalBias: 0
+    m_NormalBias: 0.3
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
