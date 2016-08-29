@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000548, guid: d40c56e4373fee740a40e635a97b6081,
+  m_LightingDataAsset: {fileID: 112000561, guid: 4dae118251504439892693be38b6cb72,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
@@ -2114,7 +2114,6 @@ GameObject:
   - 124: {fileID: 84676925}
   - 92: {fileID: 84676924}
   - 114: {fileID: 84676923}
-  - 95: {fileID: 84676927}
   m_Layer: 0
   m_Name: camera_07
   m_TagString: Security Camera
@@ -2147,7 +2146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapController:
-  - {fileID: 0}
+  - {fileID: 1279384377}
+  - {fileID: 511850007}
 --- !u!92 &84676924
 Behaviour:
   m_ObjectHideFlags: 0
@@ -2196,23 +2196,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!95 &84676927
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84676921}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3cfea3e35f3f5e444b4419edc0b2c99e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &84979558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trapController:
   - {fileID: 759999398}
+  - {fileID: 1491690017}
 --- !u!92 &84979561
 Behaviour:
   m_ObjectHideFlags: 0
@@ -2756,7 +2740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapController:
-  - {fileID: 0}
+  - {fileID: 2092453539}
+  - {fileID: 298897638}
 --- !u!92 &110746162
 Behaviour:
   m_ObjectHideFlags: 0
@@ -4557,6 +4542,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fa1eb1a13de9db4c9aaec1915650288, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &187656629 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013829896952, guid: 0fa1eb1a13de9db4c9aaec1915650288,
+    type: 2}
+  m_PrefabInternal: {fileID: 187656628}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &190509872
 Prefab:
   m_ObjectHideFlags: 0
@@ -6052,6 +6043,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1453d7a99a98ed942a00fc5ef5c57cc3, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &247910545 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011344328994, guid: 1453d7a99a98ed942a00fc5ef5c57cc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 247910544}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &249899734
 Prefab:
   m_ObjectHideFlags: 0
@@ -7034,6 +7031,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9bebab43367f1c44b3eeef64a3f11c1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &298897638 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010474652032, guid: e9bebab43367f1c44b3eeef64a3f11c1,
+    type: 2}
+  m_PrefabInternal: {fileID: 298897637}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &301485479
 Prefab:
   m_ObjectHideFlags: 0
@@ -10936,8 +10939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapController:
+  - {fileID: 1932332542}
   - {fileID: 256414064}
-  - {fileID: 0}
 --- !u!92 &511392717
 Behaviour:
   m_ObjectHideFlags: 0
@@ -11095,6 +11098,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fa1eb1a13de9db4c9aaec1915650288, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &511850007 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013829896952, guid: 0fa1eb1a13de9db4c9aaec1915650288,
+    type: 2}
+  m_PrefabInternal: {fileID: 511850006}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &517049139
 Prefab:
   m_ObjectHideFlags: 0
@@ -13066,6 +13075,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a84dc17d944ba5d498a993e31e5d923b, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &642149659 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012798150446, guid: a84dc17d944ba5d498a993e31e5d923b,
+    type: 2}
+  m_PrefabInternal: {fileID: 642149658}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &642761081
 Prefab:
   m_ObjectHideFlags: 0
@@ -14796,7 +14811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapController:
-  - {fileID: 0}
+  - {fileID: 2012222118}
+  - {fileID: 1006615130}
 --- !u!92 &730364264
 Behaviour:
   m_ObjectHideFlags: 0
@@ -16994,7 +17010,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapController:
-  - {fileID: 0}
+  - {fileID: 642149659}
+  - {fileID: 1507613570}
 --- !u!92 &857441450
 Behaviour:
   m_ObjectHideFlags: 0
@@ -19632,6 +19649,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9bebab43367f1c44b3eeef64a3f11c1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1006615130 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010474652032, guid: e9bebab43367f1c44b3eeef64a3f11c1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1006615129}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &1006674759
 Prefab:
   m_ObjectHideFlags: 0
@@ -24646,6 +24669,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9bebab43367f1c44b3eeef64a3f11c1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1279384377 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010474652032, guid: e9bebab43367f1c44b3eeef64a3f11c1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1279384376}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1 &1282054563
 GameObject:
   m_ObjectHideFlags: 0
@@ -28555,6 +28584,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1453d7a99a98ed942a00fc5ef5c57cc3, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1491690017 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011344328994, guid: 1453d7a99a98ed942a00fc5ef5c57cc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1491690016}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &1492673744
 Prefab:
   m_ObjectHideFlags: 0
@@ -28889,6 +28924,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fa1eb1a13de9db4c9aaec1915650288, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1507613570 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013829896952, guid: 0fa1eb1a13de9db4c9aaec1915650288,
+    type: 2}
+  m_PrefabInternal: {fileID: 1507613569}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &1515280869
 Prefab:
   m_ObjectHideFlags: 0
@@ -29791,8 +29832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a143751ad4b5c40b117fa5599998e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapController:
-  - {fileID: 0}
+  trapController: []
 --- !u!92 &1555906410
 Behaviour:
   m_ObjectHideFlags: 0
@@ -32696,7 +32736,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1716223280}
   m_LocalRotation: {x: -0.70710707, y: -0.00017402411, z: -0.70710653, w: 0.00017402422}
-  m_LocalPosition: {x: -50.2, y: -0.96, z: -16.06}
+  m_LocalPosition: {x: -49.07, y: -0.96, z: -16.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: -179.972, y: -90, z: 0}
   m_Children: []
@@ -35553,6 +35593,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fa1eb1a13de9db4c9aaec1915650288, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1932332542 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000013829896952, guid: 0fa1eb1a13de9db4c9aaec1915650288,
+    type: 2}
+  m_PrefabInternal: {fileID: 1932332541}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &1933202531
 Prefab:
   m_ObjectHideFlags: 0
@@ -37251,6 +37297,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9bebab43367f1c44b3eeef64a3f11c1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2012222118 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010474652032, guid: e9bebab43367f1c44b3eeef64a3f11c1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2012222117}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &2016806446
 Prefab:
   m_ObjectHideFlags: 0
@@ -38360,7 +38412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trapController:
-  - {fileID: 0}
+  - {fileID: 247910545}
+  - {fileID: 187656629}
 --- !u!92 &2065397836
 Behaviour:
   m_ObjectHideFlags: 0
@@ -39011,6 +39064,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1453d7a99a98ed942a00fc5ef5c57cc3, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2092453539 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011344328994, guid: 1453d7a99a98ed942a00fc5ef5c57cc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 2092453538}
+  m_Script: {fileID: 11500000, guid: d69150113854efb4795fec3090084a8a, type: 3}
 --- !u!1001 &2092479450
 Prefab:
   m_ObjectHideFlags: 0
