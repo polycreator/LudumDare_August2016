@@ -1,22 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-enum EnemyDirection {
-	Forward,
-	Reverse
-}
-
 public class EnemyController : MonoBehaviour {
 	public Transform enemy;
 	public Transform[] spawnPoints;
 
 	const float EnemyInterval = 7.0f;
 	const float EnemyMoveMpS = 3.0f;
+	const int MaxEnemies = 5;
 
 	float nextEnemyTime;
 	List<GameObject> enemies = new List<GameObject>();
 	List<GameObject> enemyNextWP = new List<GameObject>();
-	List<EnemyDirection> enemyDirection = new List<EnemyDirection>();
 
 	void Start () {
 		nextEnemyTime = Time.time + 1.0f;
@@ -29,33 +24,21 @@ public class EnemyController : MonoBehaviour {
 	private void spawnEnemyAt(GameObject spawnPoint) {
 		var nextEnemy = ((Instantiate(enemy, spawnPoint.transform.localPosition, Quaternion.identity)) as Transform).gameObject;
 		enemies.Add(nextEnemy);
-		enemyDirection.Add(EnemyDirection.Forward);
 		var spawnProps = spawnPoint.GetComponent<EnemyWaypoint>();
-		enemyNextWP.Add(spawnProps.next);
+		int ix = Mathf.RoundToInt(Random.Range(0, (float)spawnProps.next.Length));
+		enemyNextWP.Add(spawnProps.next[ix]);
 	}
 
 	private void selectNextWaypoint(int enemyIndex) {
 		var curTarget = enemyNextWP[enemyIndex];
 		if (curTarget) {
 			var wpProps = curTarget.GetComponent<EnemyWaypoint>();
-			var curDir = enemyDirection[enemyIndex];
-			if (curDir == EnemyDirection.Forward) {
-				if (wpProps.next != null) {
-					enemyNextWP[enemyIndex] = wpProps.next;
-				}
-				else {
-					enemyDirection[enemyIndex] = EnemyDirection.Reverse;
-					enemyNextWP[enemyIndex] = wpProps.previous;
-				}
+			if (wpProps.next != null) {
+				int ix = Mathf.RoundToInt(Random.Range(0, (float)wpProps.next.Length));
+				enemyNextWP[enemyIndex] = wpProps.next[ix];
 			}
 			else {
-				if (wpProps.previous != null) {
-					enemyNextWP[enemyIndex] = wpProps.previous;
-				}
-				else {
-					enemyDirection[enemyIndex] = EnemyDirection.Forward;
-					enemyNextWP[enemyIndex] = wpProps.next;
-				}
+				// TREASURE!
 			}
 		}
 	}

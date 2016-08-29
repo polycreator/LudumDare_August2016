@@ -12,10 +12,12 @@ public class PanelController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
+
 
 		if (Input.GetMouseButtonDown(0)) {
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+
 			if (Physics.Raycast(ray, out hit)) {
 				var button = hit.collider.gameObject.GetComponent<PanelButton>();
 				if (button && button.Press()) {
