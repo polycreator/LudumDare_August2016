@@ -18,7 +18,8 @@ public class EnemyController : MonoBehaviour {
 	}
 
 	private GameObject pickRandomSpawnPoint() {
-		return spawnPoints[0].gameObject;
+		int spix = Mathf.RoundToInt(Random.Range(0, (float)spawnPoints.Length - 1));
+		return spawnPoints[spix].gameObject;
 	}
 
 	private void spawnEnemyAt(GameObject spawnPoint) {
