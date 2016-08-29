@@ -34,7 +34,7 @@ public class EnemyController : MonoBehaviour {
 		if (curTarget) {
 			var wpProps = curTarget.GetComponent<EnemyWaypoint>();
 			if (wpProps.next != null) {
-				int ix = Mathf.RoundToInt(Random.Range(0, (float)wpProps.next.Length));
+				int ix = Mathf.RoundToInt(Random.Range(0, (float)wpProps.next.Length - 1));
 				enemyNextWP[enemyIndex] = wpProps.next[ix];
 			}
 			else {
